@@ -1,0 +1,18 @@
+.scroll-reveal {
+  display: inline-block;
+  overflow: visible;
+}
+
+.scroll-reveal-text {
+  display: inline-block;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0.8;
+  transition: filter 0.3s, opacity 0.3s;
+  will-change: filter, opacity, transform;
+}
