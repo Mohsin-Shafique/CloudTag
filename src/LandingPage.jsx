@@ -100,7 +100,7 @@ function LandingPage() {
         </div>
         <div className='portfolio-grid'>
           {[1, 2, 3].map((item) => (
-            <div className='portfolio-item' key={item}>
+            <div className='portfolio-item\' key={item}>
               <ScrollReveal
                 scrollContainerRef={scrollContainerRef}
                 containerClassName='portfolio-content'
