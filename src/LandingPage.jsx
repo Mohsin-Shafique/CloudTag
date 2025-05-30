@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import ScrollReveal from "./components/ScrollReveal";
 import ScrollFloat from "./components/ScrollFloat";
-import SplitText from "./components/splitText";
+import SplitText from "./components/SplitText";
 import "./App.css";
 import "./LandingPage.css";
 
