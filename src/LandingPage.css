@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Reset and Base Styles */
 :root {
   --primary-color: #1ea7fd;
   --background: #0a0a0a;
@@ -15,16 +15,18 @@ body {
   overflow-x: hidden;
   background: var(--background);
   color: var(--text-primary);
+  width: 100%;
 }
 
 .landing-page-container {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background: radial-gradient(
     ellipse 80% 50% at 50% -20%,
     rgba(120, 119, 198, 0.3),
     transparent
   );
+  overflow: hidden;
 }
 
 /* Navigation */
@@ -32,7 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6vw;
+  padding: 2rem max(6vw, 2rem);
   position: fixed;
   top: 0;
   left: 0;
@@ -40,6 +42,7 @@ body {
   z-index: 100;
   background: rgba(10, 10, 10, 0.8);
   backdrop-filter: blur(10px);
+  width: 100%;
 }
 
 .nav-logo {
@@ -80,18 +83,17 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 8rem 6vw 4rem;
+  padding: 8rem max(6vw, 2rem) 4rem;
   width: 100%;
 }
 
 .hero-content {
   width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
 }
 
 .hero-text-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -146,10 +148,9 @@ body {
 
 /* Introduction Section */
 .intro-section {
-  padding: 8rem 6vw;
+  padding: 8rem max(6vw, 2rem);
   text-align: center;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .intro-text {
@@ -162,7 +163,7 @@ body {
 
 /* Services Section */
 .services-section {
-  padding: 8rem 6vw;
+  padding: 8rem max(6vw, 2rem);
   background: linear-gradient(to bottom, transparent, rgba(30, 167, 253, 0.1));
   width: 100%;
 }
@@ -182,6 +183,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -225,14 +227,16 @@ body {
 
 /* Process Section */
 .process-section {
-  padding: 8rem 6vw;
+  padding: 8rem max(6vw, 2rem);
   background: linear-gradient(to top, transparent, rgba(30, 167, 253, 0.1));
+  width: 100%;
 }
 
 .process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -252,7 +256,7 @@ body {
 
 /* Portfolio Section */
 .portfolio-section {
-  padding: 8rem 6vw;
+  padding: 8rem max(6vw, 2rem);
   width: 100%;
 }
 
@@ -260,6 +264,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -293,8 +298,9 @@ body {
 
 /* Contact Section */
 .contact-section {
-  padding: 8rem 6vw;
+  padding: 8rem max(6vw, 2rem);
   background: linear-gradient(to top, transparent, rgba(30, 167, 253, 0.1));
+  width: 100%;
 }
 
 .contact-content {
