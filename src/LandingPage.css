@@ -7,26 +7,32 @@
   --card-bg: #18191c;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
   background: var(--background);
   color: var(--text-primary);
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .landing-page-container {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background: radial-gradient(
     ellipse 80% 50% at 50% -20%,
     rgba(120, 119, 198, 0.3),
     transparent
   );
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -34,7 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem max(6vw, 2rem);
+  padding: 2rem max(2rem, 4vw);
   position: fixed;
   top: 0;
   left: 0;
@@ -42,7 +48,7 @@ body {
   z-index: 100;
   background: rgba(10, 10, 10, 0.8);
   backdrop-filter: blur(10px);
-  width: 100%;
+  width: 100vw;
 }
 
 .nav-logo {
@@ -80,11 +86,11 @@ body {
 
 /* Hero Section */
 .hero-section {
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 8rem max(6vw, 2rem) 4rem;
-  width: 100%;
+  padding: 8rem max(2rem, 4vw) 4rem;
 }
 
 .hero-content {
@@ -93,9 +99,11 @@ body {
 }
 
 .hero-text-container {
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .hero-title {
@@ -148,29 +156,31 @@ body {
 
 /* Introduction Section */
 .intro-section {
-  padding: 8rem max(6vw, 2rem);
+  width: 100vw;
+  padding: 8rem max(2rem, 4vw);
   text-align: center;
-  width: 100%;
 }
 
 .intro-text {
   font-size: 1.25rem;
   line-height: 1.8;
   color: var(--text-secondary);
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Services Section */
 .services-section {
-  padding: 8rem max(6vw, 2rem);
+  width: 100vw;
+  padding: 8rem max(2rem, 4vw);
   background: linear-gradient(to bottom, transparent, rgba(30, 167, 253, 0.1));
-  width: 100%;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 .section-title {
@@ -184,8 +194,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .service-card {
@@ -227,9 +238,9 @@ body {
 
 /* Process Section */
 .process-section {
-  padding: 8rem max(6vw, 2rem);
+  width: 100vw;
+  padding: 8rem max(2rem, 4vw);
   background: linear-gradient(to top, transparent, rgba(30, 167, 253, 0.1));
-  width: 100%;
 }
 
 .process-grid {
@@ -237,8 +248,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .process-card {
@@ -256,8 +268,8 @@ body {
 
 /* Portfolio Section */
 .portfolio-section {
-  padding: 8rem max(6vw, 2rem);
-  width: 100%;
+  width: 100vw;
+  padding: 8rem max(2rem, 4vw);
 }
 
 .portfolio-grid {
@@ -265,8 +277,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .portfolio-item {
@@ -298,14 +311,15 @@ body {
 
 /* Contact Section */
 .contact-section {
-  padding: 8rem max(6vw, 2rem);
+  width: 100vw;
+  padding: 8rem max(2rem, 4vw);
   background: linear-gradient(to top, transparent, rgba(30, 167, 253, 0.1));
-  width: 100%;
 }
 
 .contact-content {
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .contact-form {
